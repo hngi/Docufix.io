@@ -21,9 +21,7 @@ body{
     line-height: 19px !important;
 }
 
-a.nav-link.text-center, a#navbarDropdown.nav-link.dropdown-toggle.text-center{
-    color: #FFFFFF !important;
-}
+
 
 .nav-link:hover{
     background-color: #FFFFFF !important;
