@@ -122,7 +122,7 @@
             ?>
              </span></p>
             <p class="d-flex justify-content-between medium-text">Email <span class="medium-purple-text"> <?= $_SESSION['login_user'] ?> </span></p>
-            <p class="d-flex justify-content-between medium-text">Phone Number <span class="medium-purple-text">08034143461</span></p>
+            <!--<p class="d-flex justify-content-between medium-text">Phone Number <span class="medium-purple-text">08034143461</span></p> -->
                   
             
            <!--/div>
