@@ -55,13 +55,13 @@ if(isset($_POST['submit'])){
                            $result = mysqli_query($conn , $sql);
                     if($result){
                                     $message .= '<div class="alert alert-success" role="alert">
-                                    Record Saved Successfully <button class="btn"><a href = "index.html">Home</a></button></div>';
+                                    Record Saved Successfully <button class="btn"><a href = "index.php">Home</a></button></div>';
                                             echo ($message);
 
                     }
                     else{
                         $message .= '<div class="alert alert-danger" role="alert">
-                        Record not Saved ' . mysqli_error($conn) . '<button class="btn"><a href = "index.html">Home</a></button>
+                        Record not Saved ' . mysqli_error($conn) . '<button class="btn"><a href = "index.php">Home</a></button>
                         </div>';
                     
                     }
@@ -204,25 +204,25 @@ if(isset($_POST['submit'])){
         }
         @media (max-width:425px){
                 .form-control {
-                    width: 320px !important;
-                    height: 50px !important;
+                    width: 300px !important;
+                    height: 40px !important;
                     
                 }
                 .signup-btn {
-                    width: 320px !important;
-                    height: 50px !important;
+                    width: 300px !important;
+                    height: 40px !important;
                     margin-left: 3px;
                     background: #3B1F9E !important;
                     margin-top: 15px ;
                      
                 }
                 .google{
-                    width: 320px !important;
-                    height: 50px !important;
+                    width: 300px !important;
+                    height: 40px !important;
                 }
                 .facebook {
-                    width: 320px !important;
-                    height: 50px !important;
+                    width: 300px !important;
+                    height: 40px !important;
                 }
                 
                 p {
@@ -234,6 +234,7 @@ if(isset($_POST['submit'])){
                 }
                 .link {
                     margin-left: 12vh;
+                    margin-right: 0px !important;
                     padding-top: 5vh !important;
                     margin-bottom: -15px !important;
                 }
@@ -508,7 +509,7 @@ if(isset($_POST['submit'])){
          }
         
         }
-        @media (max-width: 2560px){
+        @media only screen and  (max-width: 2560px){
             .lc{
                 margin-right: -100px !important;
                 text-align: ;
@@ -628,7 +629,7 @@ if(isset($_POST['submit'])){
             <div class="row   ">
                 <div class="col-sm-12 bar justify-content-between">
                     <div class="col-lg-4 col-sm-3">
-                        <a class="navbar-brand  " href="index.html"><img src="https://res.cloudinary.com/kuic/image/upload/v1572638901/docufix/Docufix_Logo_lnsgsr.svg" alt="DOCUFIX" id="image" width="75"  height="13"></a>
+                        <a class="navbar-brand  " href="index.php"><img src="https://res.cloudinary.com/kuic/image/upload/v1572638901/docufix/Docufix_Logo_lnsgsr.svg" alt="DOCUFIX" id="image" width="75"  height="13"></a>
                     </div>
                     <div class="col-lg-2 col-sm-4 lc">
                         <a class="link " href="login.php">Sign in</a>

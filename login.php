@@ -1,49 +1,58 @@
 <?php
-include('connect.php');
-session_start();
+                   
 
-$message = ''; 
-if(isset($_POST['submit'])){
-    // userEmail and userPassword sent from form 
-    
-    $userEmail = mysqli_real_escape_string($conn,$_POST['email']);
-    $userPassword = mysqli_real_escape_string($conn,$_POST['password']);    
+                               
+                    include('connect.php');
+                    session_start();
 
-
-    $sql1 = "Select * from users where email = '$userEmail'";
-    $query = mysqli_query($conn, $sql1) or die(mysql_error());
-    $result = mysqli_fetch_assoc($query);
-    $count = mysqli_num_rows($query);
-    if ($count === 1 ) {
-
-            if (password_verify($userPassword, $result["password"])) {
-
-                $_SESSION['login_user'] = $userEmail;
-                $_SESSION['loggedin'] = true;
-                $_SESSION['name'] = $result['firstname'];
-                $_SESSION['login_id'] = $result['id'];
-                $_SESSION['registered_date'] = $result['created_at'];
-                // $_SESSION['plan'] = $result['plan']
-                header("location: profile.php");
-            }
-            else { 
-                     $message = '<p class="text-warning">Invalid login credentials</p>';
-                     echo $message;
-            }
-        } 
-        else {
-        $message = '<p class="text-warning">Invalid login credentials</p>';
-       echo $message;
-    }
-}
-
-?>
+                   
+                    $message = ''; 
+                    if(isset($_POST['submit'])){
+                        // userEmail and userPassword sent from form 
+                        
+                        $userEmail = mysqli_real_escape_string($conn,$_POST['email']);
+                        $userPassword = mysqli_real_escape_string($conn,$_POST['password']);    
 
 
+                        $sql1 = "Select * from users where email = '$userEmail'";
+                        $query = mysqli_query($conn, $sql1) or die(mysql_error());
+                        $result = mysqli_fetch_assoc($query);
+                        $count = mysqli_num_rows($query);
+                        if ($count === 1 ) {
 
+                                if (password_verify($userPassword, $result["password"])) {
 
+                                    $_SESSION['login_user'] = $userEmail;
+                                    $_SESSION['loggedin'] = true;
+                                    $_SESSION['firstname'] = $result['firstname'];
+                                    $_SESSION['lastname'] = $result['lastname'];
 
+                                    $_SESSION['login_id'] = $result['id'];
+                                    $_SESSION['registered_date'] = $result['created_at'];
+                                    // $_SESSION['plan'] = $result['plan']
+                                    if(isset($_GET['redirect'])){
+                                        $redirect= $_GET['redirect'];
 
+                                        header('location: '.$redirect.'');
+       
+                                      }
+                                      else{
+                                         header("location: profile.php");
+                                      }
+                                   
+                                }
+                                else { 
+                                         $message = '<p class="text-warning">Invalid login credentials</p>';
+                                         echo $message;
+                                }
+                            } 
+                            else {
+                            $message = '<p class="text-warning">Invalid login credentials</p>';
+                           echo $message;
+                        }
+                    }
+
+                    ?>
 
 <!DOCTYPE html>
     <html lang="en">
@@ -291,22 +300,30 @@ if(isset($_POST['submit'])){
         }
         @media(max-width:425px){
                 .form-control {
-                    width: 320px !important;
-                    height: 50px !important;
+                    width: 300px !important;
+                    height: 40px !important;
                     
                 }
                 .cont-btn {
-                    width: 320px !important;
-                    height: 50px !important;
+                    width: 300px !important;
+                    height: 40px !important;
                     background-color:#3B1F9E !important;
                 }
                 .google{
-                    width: 320px !important;
-                    height: 50px !important;
+                    width: 300px !important;
+                    height: 40px !important;
                 }
                 .facebook {
-                    width: 320px !important;
-                    height: 50px !important;
+                    width: 300px !important;
+                    height: 40px !important;
+                }
+                .lc {
+                    text-align: center;
+                    font-size: 17px;
+                }
+                .forgot__pass__link{
+                    font-size: 17px;
+                    text-align: center;
                 }
                 
                 p {
@@ -648,7 +665,7 @@ if(isset($_POST['submit'])){
             <div class="row   ">
                 <div class="col-sm-12 bar justify-content-between">
                     <div class="col-lg-4 col-sm-3">
-                        <a class="navbar-brand  "href="index.html"><img src="https://res.cloudinary.com/kuic/image/upload/v1572638901/docufix/Docufix_Logo_lnsgsr.svg" alt="DOCUFIX" id="image" width="75"  height="13"></a>
+                        <a class="navbar-brand  "href="index.php"><img src="https://res.cloudinary.com/kuic/image/upload/v1572638901/docufix/Docufix_Logo_lnsgsr.svg" alt="DOCUFIX" id="image" width="75"  height="13"></a>
                     </div>
                    
                </div>
@@ -673,10 +690,12 @@ if(isset($_POST['submit'])){
                     <input type="password" class="form-control" name="password" id="password" placeholder="Password" data-toggle="tooltip" data-placement="bottom" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
                     title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><span class="error"></span>
                 </div>
+
+                                       
                 <button id="submitData" name="submit" type="submit" class="btn cont-btn "  >
                             Continue
                         </button>
-                        <a href="forgot.php" class="forgot__pass__link">Forgot Password?</a>
+                        <a href="sendrecoveryemail.php" class="forgot__pass__link">Forgot Password?</a>
                         <p class="Already-acc">Don't have an account?&nbsp;&nbsp; <a href="signup.php"><span>Sign up</span></a></p>
                 <!-- <h3 class="col-lg-8 text-center">OR</h3> 
                 <div class=" btn-grp col-lg-7  justify-content-between">
