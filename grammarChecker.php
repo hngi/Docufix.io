@@ -425,10 +425,17 @@ box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.05); height: 40px; color: white" class=
                           <a class="text-center" href="faq.php">FAQs</a>
                         </li>
                         <li class="list-inline-item">
+<<<<<<< HEAD
                           <a class="text-center" href="privacy.php">Privacy Policy</a>
                         </li>
                         <li class="list-inline-item">
                             <a class="text-center" href="termsOfService.php">Terms of Service</a>
+=======
+                          <a class="text-center" href="privacy.html">Privacy Policy</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-center" href="termsOfService.html">Terms of Service</a>
+>>>>>>> dbd9f92810413128d5260587f31e68176fd06b7e
                           </li>
                       
                     </ul>

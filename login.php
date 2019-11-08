@@ -1,10 +1,58 @@
 <?php
+<<<<<<< HEAD
       include('connect.php');
       include 'controller.php';
 
      
 
 ?>
+=======
+include('connect.php');
+session_start();
+
+$message = ''; 
+if(isset($_POST['submit'])){
+    // userEmail and userPassword sent from form 
+    
+    $userEmail = mysqli_real_escape_string($conn,$_POST['email']);
+    $userPassword = mysqli_real_escape_string($conn,$_POST['password']);    
+
+
+    $sql1 = "Select * from users where email = '$userEmail'";
+    $query = mysqli_query($conn, $sql1) or die(mysql_error());
+    $result = mysqli_fetch_assoc($query);
+    $count = mysqli_num_rows($query);
+    if ($count === 1 ) {
+
+            if (password_verify($userPassword, $result["password"])) {
+
+                $_SESSION['login_user'] = $userEmail;
+                $_SESSION['loggedin'] = true;
+                $_SESSION['name'] = $result['firstname'];
+                $_SESSION['login_id'] = $result['id'];
+                $_SESSION['registered_date'] = $result['created_at'];
+                // $_SESSION['plan'] = $result['plan']
+                header("location: profile.php");
+            }
+            else { 
+                     $message = '<p class="text-warning">Invalid login credentials</p>';
+                     echo $message;
+            }
+        } 
+        else {
+        $message = '<p class="text-warning">Invalid login credentials</p>';
+       echo $message;
+    }
+}
+
+?>
+
+
+
+
+
+
+>>>>>>> dbd9f92810413128d5260587f31e68176fd06b7e
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -26,7 +74,11 @@
     <header>
         <div class="header-wrapper">
             <div class="header-logo">
+<<<<<<< HEAD
                 <a class="navbar-brand  " href="index.php"><img src="https://res.cloudinary.com/kuic/image/upload/v1572638901/docufix/Docufix_Logo_lnsgsr.svg" alt="DOCUFIX" id="image"></a>
+=======
+                <a class="navbar-brand  " href="index.html"><img src="https://res.cloudinary.com/kuic/image/upload/v1572638901/docufix/Docufix_Logo_lnsgsr.svg" alt="DOCUFIX" id="image"></a>
+>>>>>>> dbd9f92810413128d5260587f31e68176fd06b7e
             </div>
             
             <a href="signup.php">Sign up</a>
@@ -35,6 +87,7 @@
 
     <section class="sign-in-container animated finite pulse">
         <h3>Sign in to DOCUFIX</h3>
+<<<<<<< HEAD
            <?php
                    
 
@@ -90,6 +143,8 @@
 
                     ?>
                     
+=======
+>>>>>>> dbd9f92810413128d5260587f31e68176fd06b7e
         <div class="sm-txt">
             <p>Enter your email and password</p>
         </div>
@@ -132,12 +187,17 @@
           <div class="container-fluid mt-3"><hr>
             <div class="row">
                 <div class="col-sm-6" id="docufix">
+<<<<<<< HEAD
                     <a class="navbar-brand  text-justify" href="index.php"><img src="https://res.cloudinary.com/kuic/image/upload/v1572638901/docufix/Docufix_Logo_lnsgsr.svg" alt="DOCUFIX" id="image"></a>
+=======
+                    <a class="navbar-brand  text-justify" href="index.html"><img src="https://res.cloudinary.com/kuic/image/upload/v1572638901/docufix/Docufix_Logo_lnsgsr.svg" alt="DOCUFIX" id="image"></a>
+>>>>>>> dbd9f92810413128d5260587f31e68176fd06b7e
                     <p class="text-justify">This app was built by <a href="https://hng.tech/" target="_blank">HNGi6</a> interns</p>
                 </div>
               <div class="col-sm-6 text-center">           
                   <ul class="list-inline text-center mt-3 pl-3">  
                       <li class="list-inline-item">
+<<<<<<< HEAD
                         <a class="text-center" href="contact.php">Contact us</a>
                       </li>
                       <li class="list-inline-item">
@@ -148,6 +208,18 @@
                         </li>
                         <li class="list-inline-item">
                             <a class="text-center" href="termsOfService.php">Terms of Service</a>
+=======
+                        <a class="text-center" href="contact.html">Contact us</a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a class="text-center" href="faq.html">FAQs</a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="text-center" href="privacy.html">Privacy Policy</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-center" href="termsOfService.html">Terms of Service</a>
+>>>>>>> dbd9f92810413128d5260587f31e68176fd06b7e
                           </li>
                       
                     </ul>

@@ -55,13 +55,13 @@ if(isset($_POST['submit'])){
                            $result = mysqli_query($conn , $sql);
                     if($result){
                                     $message .= '<div class="alert alert-success" role="alert">
-                                    Record Saved Successfully <button class="btn"><a href = "index.php">Home</a></button></div>';
+                                    Record Saved Successfully <button class="btn"><a href = "index.html">Home</a></button></div>';
                                             echo ($message);
 
                     }
                     else{
                         $message .= '<div class="alert alert-danger" role="alert">
-                        Record not Saved ' . mysqli_error($conn) . '<button class="btn"><a href = "index.php">Home</a></button>
+                        Record not Saved ' . mysqli_error($conn) . '<button class="btn"><a href = "index.html">Home</a></button>
                         </div>';
                     
                     }
@@ -71,7 +71,10 @@ if(isset($_POST['submit'])){
 
     }
  ?>
+<<<<<<< HEAD
 
+=======
+>>>>>>> dbd9f92810413128d5260587f31e68176fd06b7e
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -93,7 +96,11 @@ if(isset($_POST['submit'])){
     <header>
         <div class="header-wrapper">
             <div class="header-logo">
+<<<<<<< HEAD
                 <a class="navbar-brand  " href="index.php"><img src="https://res.cloudinary.com/kuic/image/upload/v1572638901/docufix/Docufix_Logo_lnsgsr.svg" alt="DOCUFIX" id="image"></a>
+=======
+                <a class="navbar-brand  " href="index.html"><img src="https://res.cloudinary.com/kuic/image/upload/v1572638901/docufix/Docufix_Logo_lnsgsr.svg" alt="DOCUFIX" id="image"></a>
+>>>>>>> dbd9f92810413128d5260587f31e68176fd06b7e
             </div>
             
             <a href="login.php">Sign in</a>
@@ -155,12 +162,17 @@ if(isset($_POST['submit'])){
           <div class="container mt-3"><hr>
             <div class="row">
                 <div class="col-sm-6" id="docufix">
+<<<<<<< HEAD
                     <a class="navbar-brand  text-justify" href="index.php"><img src="https://res.cloudinary.com/kuic/image/upload/v1572638901/docufix/Docufix_Logo_lnsgsr.svg" alt="DOCUFIX" id="image"></a>
+=======
+                    <a class="navbar-brand  text-justify" href="index.html"><img src="https://res.cloudinary.com/kuic/image/upload/v1572638901/docufix/Docufix_Logo_lnsgsr.svg" alt="DOCUFIX" id="image"></a>
+>>>>>>> dbd9f92810413128d5260587f31e68176fd06b7e
                     <p class="text-justify">This app was built by <a href="https://hng.tech/" target="_blank">HNGi6</a> interns</p>
                 </div>
               <div class="col-sm-6 text-center">           
                   <ul class="list-inline text-center mt-3 pl-3">  
                       <li class="list-inline-item">
+<<<<<<< HEAD
                         <a class="text-center" href="contact.php">Contact us</a>
                       </li>
                       <li class="list-inline-item">
@@ -171,6 +183,18 @@ if(isset($_POST['submit'])){
                         </li>
                         <li class="list-inline-item">
                             <a class="text-center" href="termsOfService.php">Terms of Service</a>
+=======
+                        <a class="text-center" href="contact.html">Contact us</a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a class="text-center" href="faq.html">FAQs</a>
+                        </li>
+                       <li class="list-inline-item">
+                          <a class="text-center" href="privacy.html">Privacy Policy</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-center" href="termsOfService.html">Terms of Service</a>
+>>>>>>> dbd9f92810413128d5260587f31e68176fd06b7e
                           </li>
                       
                     </ul>
