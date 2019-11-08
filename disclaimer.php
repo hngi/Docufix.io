@@ -22,11 +22,7 @@
     <!--Header-->
      <header>
           <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top scrolling-navbar" id="nav">
-<<<<<<< HEAD:disclaimer.php
             <a class="navbar-brand" href="index.php" id="logo">
-=======
-            <a class="navbar-brand" href="index.html" id="logo">
->>>>>>> dbd9f92810413128d5260587f31e68176fd06b7e:disclaimer.html
               <img src="https://res.cloudinary.com/kuic/image/upload/v1573054016/docufix/Group_1_5_olg2uj.svg" alt="DOCUFIX" class="image">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" id="btn">
@@ -35,18 +31,13 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav text-center ml-auto">
                 <li class="nav-item active">
-<<<<<<< HEAD:disclaimer.php
                   <a class="nav-link" href="about_us.php">About Us</a>
-=======
-                  <a class="nav-link" href="about_us.html">About Us</a>
->>>>>>> dbd9f92810413128d5260587f31e68176fd06b7e:disclaimer.html
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Tools
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-<<<<<<< HEAD:disclaimer.php
                     <a class="dropdown-item" href="fileupload.php">Compare files</a>
                     <a class="dropdown-item" href="grammarChecker.php">Grammar Check</a>
                     <a class="dropdown-item" href="filedelimiter.php">Check for duplicates</a>
@@ -80,22 +71,6 @@
                   ';
                 }
                 ?>
-=======
-                    <a class="dropdown-item" href="fileupload.html">Compare files</a>
-                    <a class="dropdown-item" href="grammarChecker.html">Grammar Check</a>
-                    <a class="dropdown-item" href="filedelimiter.html">Check for duplicates</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="teampage.html">Our Team</a>
-                </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="login.php" target="_blank">Login</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="signup.php">Get Started</a>
-                  </li>
->>>>>>> dbd9f92810413128d5260587f31e68176fd06b7e:disclaimer.html
               </ul>
             </div>
           </nav>
@@ -217,17 +192,10 @@
                       <a class="text-center" href="faq.php">FAQs</a>
                     </li>
                     <li class="list-inline-item">
-<<<<<<< HEAD:disclaimer.php
                       <a class="text-center" href="privacy.php">Privacy Policy</a>
                     </li>
                     <li class="list-inline-item">
                         <a class="text-center" href="termsOfService.php">Terms of Service</a>
-=======
-                      <a class="text-center" href="privacy.html">Privacy Policy</a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="text-center" href="termsOfService.html">Terms of Service</a>
->>>>>>> dbd9f92810413128d5260587f31e68176fd06b7e:disclaimer.html
                       </li>   
                 </ul>
           </div>
