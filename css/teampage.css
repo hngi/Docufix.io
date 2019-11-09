@@ -1,132 +1,124 @@
 
 
+*{
+	box-sizing: border-box;
+	text-align: center;
+}
 
-        
-		body{
-			overflow-x: hidden;
-		   }
-		   .container{
-			   width: 100%;
-			   margin: 0 auto;
-		   }
-				 
-		   .content-box {
-			   padding: 60px 0 60px 0;
-		   }
-		   
-		   .content-title h3 {
-			   font-size: 1.875em !important;
-			   font-weight: bold;
-			   text-align: center;
-			   margin: 2% auto;
-			   font-family: 'Nunito', sans-serif !important;
-			   color: #3B1F9E !important;
-		   }
+	
+.content-box {
+   padding: 60px 0 60px 0;
+}
+
+.content-title h3 {
+   font-size: 1.2em !important;
+   font-weight: bold;
+   text-align: center;
+   margin: 0 0 10px 0;
+   font-family: 'Nunito', sans-serif !important;
+   color: #3B1F9E !important;
+}
+
+.content-title-underline {
+   width: 100px;
+   height: 2px;
+   background-color: #3B1F9E;
+   margin: 0 auto 30px auto;
+}   
+.user-info h3{
+   color: #3B1F9E !important;
+   text-transform: capitalize !important;
+}
+/*====================================================================
+		   Diagonal Line and Profile Picture Setting
+===================================================================*/
+/*.container{
+	display: flex;
+	height: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}*/
+.the-col{
+	width: 350px;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 50px;
+}
    
-		   .content-title-underline {
-			   width: 100px;
-			   height: 2px;
-			   background-color: #3B1F9E;
-			   margin: 0 auto 30px auto;
-		   }
-		   .user-info h3{
-			   color: #3B1F9E !important;
-			   text-transform: capitalize !important;
-		   }
-		   /*====================================================================
-					   Diagonal Line and Profile Picture Setting
-		   ===================================================================*/
+.all-users {
+	width: 350px;
+	height: auto;
+	background-color: #fff;
+	padding: 0;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+}
+.user-image {
+   background-color: #013A6B;
+   background-image: -webkit-linear-gradient(-60deg,#3B1F9E  50%, #fff 50%);
+   min-height: 200px;
+   padding-top: 50px;
+   border-radius: 10px;
+}
+.content-part {
+   padding: 30px 0 30px 0;
+   text-align: center;
+}
+.user-content {
+   padding: 0 0 30px 0;
+}  
+.content-footer {
+   text-align: center;
+   background: rgba(199, 195, 195, 0.1);
+   height: 50px;
+}
+.social-icons {
+   padding: 10px 20px;
+}
+/*====================================================================
+				   Social Icons styles
+===================================================================*/
+.fa-twitter {
+   color: #50ABF1;
+}
    
-		   .the-col{
-			   width: 350px;
-			   display: flex;
-			   justify-content: space-around;
-			   margin-bottom: 50px;
-		   }
-   
-		   .all-users {
-			   width: 350px;
-			   height: auto;
-			   background-color: #fff;
-			   padding: 0;
-			   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
-			   border-radius: 10px;
-		   }
-   
-		   .user-image {
-			   background-color: #013A6B;
-			   background-image: -webkit-linear-gradient(-60deg,#3B1F9E  50%, #fff 50%);
-			   border: none !important;
-			   min-height: 200px;
-			   padding-top: 50px;
-			   border-radius: 10px;
-		   }
-		   .content-part {
-			   padding: 30px 0 30px 0;
-			   text-align: center;
-		   }
-   
-		   .user-content {
-			   padding: 0 0 30px 0;
-		   }
-   
-   
-		   .content-footer {
-			   text-align: center;
-			   background: rgba(199, 195, 195, 0.1);
-			   height: 50px;
-		   }
-   
-		   .social-icons {
-			   padding: 10px 20px;
-		   }
-   
-		   /*====================================================================
-							   Social Icons styles
-		   ===================================================================*/
-		   .fa-twitter {
-			   color: #50ABF1;
-		   }
-   
-		   .fa-twitter {
-			   color: #73C2FB;
-		   }
-   
-		   .fa-linkedin {
-			   color: #73C2FB;
-		   }
-   
-		   .fa-facebook {
-			   color:  #4267B2;
-		   }
-   
-		   .fa-facebook {
-			   color:  #73C2FB;
-		   }
-		   .fa-instagram{
-			   color:  #73C2FB;
-		   }
-		   .fa-instagram:hover{
-			   color:  #E1306C;
-		   }
-		   .fa-linkedin:hover{
-			   color:#2867B2;
-		   }.fa-facebook:hover{
-			   color:#4267B2;
-		   }
-		   .fa-twitter:hover{
-			   color: #1DA1F2;
-		   }
-		   .content-footer{
-			margin-bottom: 10%;
-		   }
+   .fa-twitter {
+	   color: #73C2FB;
+   }
+   .fa-linkedin {
+	   color: #73C2FB;
+   }
+   .fa-facebook {
+	   color:  #4267B2;
+   }
+   .fa-facebook {
+	   color:  #73C2FB;
+   }
+   .fa-instagram{
+	   color:  #73C2FB;
+   }
+   .fa-instagram:hover{
+	   color:  #E1306C;
+   }
+   .fa-linkedin:hover{
+	   color:#2867B2;
+   }.fa-facebook:hover{
+	   color:#4267B2;
+   }
+   .fa-twitter:hover{
+	   color: #1DA1F2;
+   }
+   .content-footer{
+	margin-bottom: 10%;
+   }
 		   .content-footer a {
 			   color: #060541;
 		   }
 						   
-		   .fa-bars{
-			   color: white;
-		   }
+		   
 		   .navbar-brand h1{
 			   font-family: 'Open Sans',sans-serif;
 			   font-size:40px;
@@ -485,7 +477,282 @@
 			   .all-users{
 				   width: 100%;
 				   margin: 0 auto;
+				   padding: 0;
 			   }
-			   
+			  
 		   }
+		   /*team2*/
 		   
+		  
+		   /*team*/
+		   #the-team .section-header {
+			padding-top: 18px;
+		  }
+		  #the-team .portrait-container {
+			box-sizing: border-box;
+			margin: 30px auto;
+			overflow: hidden;
+			text-align: center;
+			width: 94%;
+		  }
+		  #the-team .team-card .card-photo {
+			transition: opacity 0.5s;
+		  }
+		  #the-team .over-team-card .team-card {
+			cursor: pointer;
+		  }
+		  #the-team .over-team-card .team-card .card-photo {
+			opacity: 0.5;
+		  }
+		  #the-team .over-team-card .team-card:hover .card-photo {
+			opacity: 1;
+		  }
+		  #the-team .over-team-card .team-card:hover .card-info {
+			display: block;
+			cursor: default;
+		  }
+		  #the-team .over-team-card .card-photo:hover .normal {
+			display: none;
+		  }
+		  #the-team .over-team-card .card-photo:hover .alternate {
+			display: block;
+		  }
+		  #the-team .team-card {
+			width: 200px;
+			display: inline-block;
+			margin: 0 15px 15px 0;
+			min-height: 267px;
+			position: relative;
+		  }
+		  #the-team .card-photo {
+			width: 200px;
+			height: auto;
+			position: absolute;
+			left: 0;
+			top: 0;
+		  }
+		  #the-team .card-photo img {
+			height: 267px;
+			display: block;
+			width: 200px;
+			object-fit: cover;
+		  }
+		  
+		  #the-team .card-info {
+			background: white;
+			display: none;
+			min-height: 277px;
+			padding: 15px 5px 10px 5px;
+			position: absolute;
+			top: 267px;
+			width: 200px;
+			z-index: 2;
+		  }
+		  .team-card h2,
+		  .team-card h3 {
+			color: #3B1F9E;
+			text-align: center;
+		  }
+		  .team-card h2 {
+			font-size: 23px;
+			margin-bottom: 5px;
+			margin-top: 5px;
+		  }
+		  .team-card h3 {
+			font-size: 16px;
+			font-weight: 100;
+			margin-bottom: 10px;
+		  }
+		  .team-card p {
+			color: #444;
+			font-size: 13px;
+			line-height: 16px;
+			margin: 0;
+			margin-bottom: 10px;
+			overflow: hidden;
+			text-align: left;
+		  }
+		  .team-card .social-links {
+			text-align: center;
+		  }
+		  .team-card .social-links a {
+			display: inline-block;
+			height: 30px;
+			margin-left: 3.5px;
+			margin-right: 3.5px;
+			text-decoration: none;
+			width: 30px;
+		  }
+		  .team-card .social-links a:hover {
+			opacity: 0.5;
+		  }
+		 
+		  /* end of about the team styles */
+		  /* Content Specialists styles */
+		  #content-specialists .subject-title h1 {
+			border-color: #314453;
+			color: #314453;
+		  }
+		  #content-specialists .team-card .card-initials {
+			background: #314453;
+		  }
+		  #content-specialists .domain-science .subject-title h1 {
+			border-color: #94424f;
+			color: #94424f;
+		  }
+		  #content-specialists .domain-science .team-card .card-initials {
+			background: #94424f;
+		  }
+		  #content-specialists .domain-humanities .subject-title h1 {
+			border-color: #ad3434;
+			color: #ad3434;
+		  }
+		  #content-specialists .domain-humanities .team-card .card-initials {
+			background: #ad3434;
+		  }
+		  #content-specialists .domain-economics-finance-domain .subject-title h1 {
+			border-color: #b77033;
+			color: #b77033;
+		  }
+		  #content-specialists .domain-economics-finance-domain .team-card .card-initials {
+			background: #b77033;
+		  }
+		  #content-specialists .domain-cs .subject-title h1 {
+			border-color: #437a39;
+			color: #437a39;
+		  }
+		  #content-specialists .domain-cs .team-card .card-initials {
+			background: #437a39;
+		  }
+		  #content-specialists .domain-hour-of-code .subject-title h1 {
+			border-color: #437a39;
+			color: #437a39;
+		  }
+		  #content-specialists .domain-hour-of-code .team-card .card-initials {
+			background: #437a39;
+		  }
+		  #content-specialists .domain-computer-programming .subject-title h1 {
+			border-color: #437a39;
+			color: #437a39;
+		  }
+		  #content-specialists .domain-computer-programming .team-card .card-initials {
+			background: #437a39;
+		  }
+		  #content-specialists .domain-computing .subject-title h1 {
+			border-color: #437a39;
+			color: #437a39;
+		  }
+		  #content-specialists .domain-computing .team-card .card-initials {
+			background: #437a39;
+		  }
+		  #content-specialists .domain-partner-content .subject-title h1 {
+			border-color: #218270;
+			color: #218270;
+		  }
+		  #content-specialists .domain-partner-content .team-card .card-initials {
+			background: #218270;
+		  }
+		  #content-specialists .domain-math .subject-title h1 {
+			border-color: #1c758a;
+			color: #1c758a;
+		  }
+		  #content-specialists .domain-math .team-card .card-initials {
+			background: #1c758a;
+		  }
+		  #content-specialists .domain-test-prep .subject-title h1 {
+			border-color: #644172;
+			color: #644172;
+		  }
+		  #content-specialists .domain-test-prep .team-card .card-initials {
+			background: #644172;
+		  }
+		  #content-specialists .domain-college-careers-more .subject-title h1 {
+			border-color: #218270;
+			color: #218270;
+		  }
+		  #content-specialists .domain-college-careers-more .team-card .card-initials {
+			background: #218270;
+		  }
+		  #content-specialists .employee-search input {
+			background: #f7f7f7;
+			border-bottom: 1px solid #ddd;
+		  }
+		  #content-specialists .subject-title {
+			box-sizing: border-box;
+			margin: 30px auto 0;
+			max-width: 1200px;
+			padding: 15px;
+		  }
+		  #content-specialists .subject-title h1 {
+			border-bottom: 1px solid;
+			font-size: 36px;
+			margin-bottom: 0;
+		  }
+		  #content-specialists .portrait-container {
+			box-sizing: border-box;
+			column-count: 3;
+			column-gap: 0;
+			margin: 0 auto;
+			max-width: 1200px;
+			text-align: center;
+		  }
+		  @media screen and (max-width: 900px) {
+			#content-specialists .portrait-container {
+			  column-count: 2;
+			}
+		  }
+		  @media screen and (max-width: 600px) {
+			#content-specialists .portrait-container {
+			  column-count: 1;
+			}
+		  }
+		  #content-specialists .team-card {
+			box-sizing: border-box;
+			display: inline-block;
+			max-width: 395px;
+			padding: 15px;
+			vertical-align: top;
+			width: 100%;
+		  }
+		  #content-specialists .team-card .card-info {
+			padding: 0px 20px;
+			margin-left: 80px;
+			z-index: 2;
+		  }
+		  #content-specialists .team-card h2,
+		  #content-specialists .team-card h4 {
+			line-height: 1.2;
+			text-align: left;
+		  }
+		  #content-specialists .team-card h2 {
+			font-size: 23px;
+			margin-bottom: 5px;
+			margin-top: 0;
+		  }
+		  #content-specialists .team-card h4 {
+			color: #999;
+			font-size: 14px;
+			font-weight: bold;
+			margin-bottom: 10px;
+			text-transform: uppercase;
+		  }
+		  #content-specialists .card-photo {
+			float: left;
+			height: 107px;
+			overflow: hidden;
+			width: 80px;
+		  }
+		  #content-specialists .card-photo img {
+			display: block;
+			width: 100%;
+		  }
+		  #content-specialists .card-initials {
+			background: #ddd;
+			color: #fff;
+			font-size: 28px;
+			font-weight: 700;
+			line-height: 80px;
+			height: 80px;
+		  }
+		  /* end of content specialists styles */
+		  
