@@ -1,0 +1,217 @@
+.dropdown, .sideC {
+  margin-top: 30px;
+}
+
+.sideC {
+  margin-left: 10px;
+}
+
+.list-group img {
+  margin-right: 10px;
+}
+
+.newCon {
+  width: 94px;
+  height: 94px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.05);
+  margin-right: 3em;
+  margin-bottom: 10px;
+  
+}
+
+.newIm {
+  position: relative;
+  margin-top: 20px;
+}
+
+.Pchecked {
+  width: 201px;
+  height: 94px;
+  background: white;
+  border-radius: 5px;
+  color: #3B1F9E;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.05);
+  margin-right: 3em;
+  /*left: 585px;
+  top:178px;*/
+}
+
+.pcon {
+  margin-left: 18px;
+  margin-bottom: 6px;
+  padding-bottom: 15px;
+}
+
+.pIm {
+  margin-bottom: 15px;
+}
+
+.no {
+  font-size: 36px;
+  margin-left: 25px;
+  
+}
+
+.Dcont {
+  margin-top: 4em;
+  margin-left: 1.2em;
+}
+
+.contents-checked {
+  margin-left: 6px;
+  margin-top: 2em;
+}
+
+.contents-checked table {
+  margin-top: 4px;
+  color: #828282;
+}
+
+.contents-checked table .otd {
+  border-top: 7px solid rgb(229, 229, 229, 0.5);
+}
+
+#myTab {
+  border-bottom-color: #3B1F9E;
+}
+
+#myTab a {
+  color: #C4C4C4;
+}
+
+#myTab .active {
+  border: none;
+  background-color: rgb(229, 229, 229, 0);
+  border-bottom: 2px solid #3B1F9E;
+  color: #3B1F9E;
+  font-weight: bold;
+}
+
+.contents-checked table th {
+  font-weight: normal;
+}
+
+.contents-checked table .fileName {
+  color: #3B1F9E;
+}
+
+.contents-checked i {
+  
+  cursor: default;
+}
+
+.drpC button{
+  color: #C4C4C4;;
+}
+
+.drpC button:hover{
+  color: #3B1F9E;
+}
+
+div.fixed {
+  position: fixed;
+  bottom: 10px;
+}
+
+.footer {
+  float: center;
+  color: #3B1F9E;
+  margin-left: 15px;
+  margin-bottom: 25px;
+}
+
+.nox {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 500px) {
+  * table {
+    font-size: 12px;
+  }
+
+  #num {
+    display: none;
+  }
+  
+  .contents-checked {
+  margin-left: 6px;
+  margin-top: 4em;
+}
+
+.newCon {
+  margin-bottom: 20px;
+}
+
+.Pchecked {
+  margin-top: 20px;
+  width: 120px;
+  height: 62px;
+  margin-right: 1em;
+  margin-bottom: 20px;
+}
+
+
+.newcon, .pcon img{
+  width: 28;
+  height: 25;
+}
+
+.Dcont {
+  padding-top: 10px;
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+  background-color: rgb(252, 252, 252,0.5);
+}
+
+.ptxt {
+  font-size: 15px;
+}
+
+#myTab a {
+  font-size: 12px !important;
+}
+
+#logo img {
+  margin-left: 1em!important;
+}
+
+}
+
+@media and (max-width: 1150px) {
+  .Pchecked, .newCon {
+    margin-right: 10px!important;
+    margin-left: 10px!important;
+  }
+
+  .newCon {
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
+
+  .Pchecked {
+  margin-top: 20px;
+  width: 120px;
+  height: 62px;
+  margin-right: 1em;
+  margin-bottom: 20px;
+}
+}
+
+@media and (max-width: 650px) {
+  #logo img {
+    margin-left: 1em;
+  }
+}
+
+@media and (max-width: 300px) {
+  .Pchecked {
+  margin-top: 3em;
+  width: 120px;
+  height: 62px;
+  margin-right: 1em;
+  
+}
+
+}
